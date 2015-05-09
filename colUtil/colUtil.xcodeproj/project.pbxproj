@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C1ECC01AFE71D2002A82C6 /* CUutilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1ECBF1AFE71D2002A82C6 /* CUutilities.m */; };
 		3B3392381AFBEF3300FEA5F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3392371AFBEF3300FEA5F8 /* main.m */; };
 		3B33923B1AFBEF3300FEA5F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B33923A1AFBEF3300FEA5F8 /* AppDelegate.m */; };
 		3B33923E1AFBEF3300FEA5F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B33923D1AFBEF3300FEA5F8 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21C1ECBE1AFE71D2002A82C6 /* CUutilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUutilities.h; sourceTree = "<group>"; };
+		21C1ECBF1AFE71D2002A82C6 /* CUutilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUutilities.m; sourceTree = "<group>"; };
 		3B3392321AFBEF3300FEA5F8 /* colUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3392361AFBEF3300FEA5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B3392371AFBEF3300FEA5F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				3B33923A1AFBEF3300FEA5F8 /* AppDelegate.m */,
 				3B33923C1AFBEF3300FEA5F8 /* ViewController.h */,
 				3B33923D1AFBEF3300FEA5F8 /* ViewController.m */,
+				21C1ECBE1AFE71D2002A82C6 /* CUutilities.h */,
+				21C1ECBF1AFE71D2002A82C6 /* CUutilities.m */,
 				3B33923F1AFBEF3300FEA5F8 /* Main.storyboard */,
 				3B3392421AFBEF3300FEA5F8 /* Images.xcassets */,
 				3B3392441AFBEF3300FEA5F8 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C1ECC01AFE71D2002A82C6 /* CUutilities.m in Sources */,
 				3B33923E1AFBEF3300FEA5F8 /* ViewController.m in Sources */,
 				3B33923B1AFBEF3300FEA5F8 /* AppDelegate.m in Sources */,
 				3B3392381AFBEF3300FEA5F8 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				3B3392571AFBEF3300FEA5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B3392581AFBEF3300FEA5F8 /* Build configuration list for PBXNativeTarget "colUtilTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				3B33925A1AFBEF3300FEA5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
