@@ -142,7 +142,6 @@
         lesser = lum1;
         greater = lum2;
     }
-    NSLog(@"%f > %f", greater, lesser);
     
     score = (float) (lround((greater + 0.05) / (lesser + 0.05) * 10)) / 10;
     

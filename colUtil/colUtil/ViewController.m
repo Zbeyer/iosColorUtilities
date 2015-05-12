@@ -17,6 +17,22 @@
 @synthesize primaryColor = _primaryColor;
 @synthesize secondaryColor = _secondaryColor;
 
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+
+    if (scrollView == self.descriptionViewRight) {
+        self.descriptionViewLeft.contentOffset = self.descriptionViewRight.contentOffset;
+    }
+    else {
+        self.descriptionViewRight.contentOffset = self.descriptionViewLeft.contentOffset;
+    }
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     
@@ -89,6 +105,9 @@
     
     self.colorEntry1.delegate = self;
     self.colorEntry2.delegate = self;
+    
+    self.descriptionViewLeft.delegate = self;
+    self.descriptionViewRight.delegate = self;
     
     self.descriptionViewRight.text = self.descriptionViewLeft.text = @"Luminocity \nColor Contrast\n According to the Web Content Accessibility Guidelines from December 2008: (section 1.4.3) \n \"The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: (Level AA),\" and goes on to exclude: Large-scale text, logos, and decoration unrelated to user experience. \n \n \"Contrast (Enhanced): The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: (Level AAA),\" and goes on to exclude: the formentioned.\n \n In a nutshell this means that, for web, contrast ratio between two \"relative luminance\" values must be 7:1 (or greater) to recieve a AAA ranking. \n \nA AA ranking is earned by a contrast ratio of 4.5:1 (or greater).\n";
     
