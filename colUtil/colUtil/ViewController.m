@@ -17,6 +17,37 @@
 @synthesize primaryColor = _primaryColor;
 @synthesize secondaryColor = _secondaryColor;
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.colorEntry1)
+    {
+        [self.colorEntry2 becomeFirstResponder];
+    }
+    else if ((textField == self.colorEntry2)
+             && (self.colorEntry1.text.length == 0))
+    {
+        [self.colorEntry1 becomeFirstResponder];
+    }
+    else
+    {
+        [textField resignFirstResponder];
+        [self onCalc:textField];
+    }
+    
+    return YES;
+}
+
+
 - (void)setPrimaryColor:(UIColor *)primaryColor {
     _primaryColor = primaryColor;
     self.descriptionViewLeft.textColor = _primaryColor;
@@ -55,6 +86,9 @@
     self.contrast.textColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#333333"]];
     self.scoreBG.layer.cornerRadius = 32;
     
+    
+    self.colorEntry1.delegate = self;
+    self.colorEntry2.delegate = self;
     
     self.descriptionViewRight.text = self.descriptionViewLeft.text = @"Luminocity \nColor Contrast\n According to the Web Content Accessibility Guidelines from December 2008: (section 1.4.3) \n \"The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: (Level AA),\" and goes on to exclude: Large-scale text, logos, and decoration unrelated to user experience. \n \n \"Contrast (Enhanced): The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: (Level AAA),\" and goes on to exclude: the formentioned.\n \n In a nutshell this means that, for web, contrast ratio between two \"relative luminance\" values must be 7:1 (or greater) to recieve a AAA ranking. \n \nA AA ranking is earned by a contrast ratio of 4.5:1 (or greater).\n";
     

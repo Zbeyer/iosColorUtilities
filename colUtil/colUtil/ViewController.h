@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *colorEntry1;
 @property (weak, nonatomic) IBOutlet UITextField *colorEntry2;
 @property (weak, nonatomic) IBOutlet UILabel *contrast;
