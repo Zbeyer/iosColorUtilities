@@ -158,43 +158,15 @@
                                     <action selector="onCalc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="if3-Od-nHZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="C2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsB-X7-evx">
-                                <rect key="frame" x="432" y="72" width="48" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="248" y="72" width="32" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="260" y="75" width="96" height="24"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="C1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-af-fiQ">
-                                <rect key="frame" x="120" y="72" width="48" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="120" y="72" width="32" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="77" width="96" height="24"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vAd-PG-sVf" secondAttribute="bottom" constant="20" id="6Yu-e7-ELb"/>
-                            <constraint firstItem="fcd-af-fiQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="6hS-dq-2Mk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VuO-fb-4s4" secondAttribute="trailing" constant="5" id="99K-yE-vwD"/>
                             <constraint firstItem="u8R-88-7TG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Aul-Ig-iSR"/>
                             <constraint firstItem="VuO-fb-4s4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Bfq-x1-qpc"/>
-                            <constraint firstItem="fcd-af-fiQ" firstAttribute="leading" secondItem="sIC-8U-MCH" secondAttribute="trailing" constant="8" id="IOt-yp-K7L"/>
-                            <constraint firstItem="u8R-88-7TG" firstAttribute="leading" secondItem="GsB-X7-evx" secondAttribute="trailing" constant="8" id="IkC-xX-oq9"/>
                             <constraint firstItem="VuO-fb-4s4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K55-X9-lbh"/>
                             <constraint firstItem="XXJ-70-oMR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PWr-DX-YRu"/>
-                            <constraint firstItem="GsB-X7-evx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="X0w-Oj-azg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VuO-fb-4s4" secondAttribute="bottom" id="YPS-7S-lYq"/>
                             <constraint firstAttribute="centerX" secondItem="VuO-fb-4s4" secondAttribute="centerX" constant="2.5" id="YoK-lR-n5S"/>
                             <constraint firstItem="sIC-8U-MCH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dAK-gv-Rpg"/>

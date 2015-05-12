@@ -100,8 +100,9 @@
     [super viewWillAppear:animated];
     self.scoreBG.backgroundColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#EEEEEE"]];
     self.contrast.textColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#333333"]];
-    self.scoreBG.layer.cornerRadius = 32;
-    
+    self.scoreBG.layer.cornerRadius = 40;
+    self.scoreBG.layer.borderWidth = 1.0;
+    self.scoreBG.layer.borderColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#333333"]].CGColor;
     
     self.colorEntry1.delegate = self;
     self.colorEntry2.delegate = self;
