@@ -98,11 +98,22 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.scoreBG.backgroundColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#EEEEEE"]];
-    self.contrast.textColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#333333"]];
+    
+    UIColor * lightGray = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"EEEEEE"]];
+    UIColor * darkGray = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"333333"]];
+    
+    self.scoreBG.backgroundColor = lightGray;
+    self.contrast.textColor = darkGray;
+    self.scoreBG.layer.borderColor = darkGray.CGColor;
     self.scoreBG.layer.cornerRadius = 40;
     self.scoreBG.layer.borderWidth = 1.0;
-    self.scoreBG.layer.borderColor = [CUutilities uiColorFromColorData:[CUutilities colorFromHexString:@"#333333"]].CGColor;
+    
+    
+    self.calcBttn.backgroundColor = darkGray;
+    self.calcBttn.layer.borderColor = lightGray.CGColor;
+    self.calcBttn.layer.borderWidth = 1.0;
+    self.calcBttn.layer.cornerRadius = 16;
+    
     
     self.colorEntry1.delegate = self;
     self.colorEntry2.delegate = self;

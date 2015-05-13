@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ColorPickerViewController.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *colorEntry1;
@@ -22,7 +23,7 @@
 
 @property (nonatomic, strong) UIColor* secondaryColor;
 
-
+@property (weak, nonatomic) IBOutlet UIButton *calcBttn;
 - (IBAction)onCalc:(id)sender;
 
 

@@ -15,6 +15,8 @@
 		3B3392431AFBEF3300FEA5F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3392421AFBEF3300FEA5F8 /* Images.xcassets */; };
 		3B3392461AFBEF3300FEA5F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3392441AFBEF3300FEA5F8 /* LaunchScreen.xib */; };
 		3B3392521AFBEF3300FEA5F8 /* colUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3392511AFBEF3300FEA5F8 /* colUtilTests.m */; };
+		3B49F9FC1B03CD0E0002E275 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B49F9FB1B03CD0E0002E275 /* ColorPickerViewController.m */; };
+		3B49F9FE1B04021C0002E275 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B49F9FD1B04021C0002E275 /* color.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		3B33924B1AFBEF3300FEA5F8 /* colUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = colUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3392501AFBEF3300FEA5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B3392511AFBEF3300FEA5F8 /* colUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = colUtilTests.m; sourceTree = "<group>"; };
+		3B49F9FA1B03CD0E0002E275 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		3B49F9FB1B03CD0E0002E275 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		3B49F9FD1B04021C0002E275 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +89,15 @@
 		3B3392341AFBEF3300FEA5F8 /* colUtil */ = {
 			isa = PBXGroup;
 			children = (
+				3B49F9FD1B04021C0002E275 /* color.png */,
 				3B3392391AFBEF3300FEA5F8 /* AppDelegate.h */,
 				3B33923A1AFBEF3300FEA5F8 /* AppDelegate.m */,
 				3B33923C1AFBEF3300FEA5F8 /* ViewController.h */,
 				3B33923D1AFBEF3300FEA5F8 /* ViewController.m */,
 				21C1ECBE1AFE71D2002A82C6 /* CUutilities.h */,
 				21C1ECBF1AFE71D2002A82C6 /* CUutilities.m */,
+				3B49F9FA1B03CD0E0002E275 /* ColorPickerViewController.h */,
+				3B49F9FB1B03CD0E0002E275 /* ColorPickerViewController.m */,
 				3B33923F1AFBEF3300FEA5F8 /* Main.storyboard */,
 				3B3392421AFBEF3300FEA5F8 /* Images.xcassets */,
 				3B3392441AFBEF3300FEA5F8 /* LaunchScreen.xib */,
@@ -208,6 +216,7 @@
 				3B3392411AFBEF3300FEA5F8 /* Main.storyboard in Resources */,
 				3B3392461AFBEF3300FEA5F8 /* LaunchScreen.xib in Resources */,
 				3B3392431AFBEF3300FEA5F8 /* Images.xcassets in Resources */,
+				3B49F9FE1B04021C0002E275 /* color.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C1ECC01AFE71D2002A82C6 /* CUutilities.m in Sources */,
+				3B49F9FC1B03CD0E0002E275 /* ColorPickerViewController.m in Sources */,
 				3B33923E1AFBEF3300FEA5F8 /* ViewController.m in Sources */,
 				3B33923B1AFBEF3300FEA5F8 /* AppDelegate.m in Sources */,
 				3B3392381AFBEF3300FEA5F8 /* main.m in Sources */,

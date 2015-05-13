@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2B4C354C-35BB-4593-A0CE-5ADA745964AF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>colUtil</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>93E4E6F750D86614A06CE08774D68F3E70358A38</key>
 		<string>https://github.com/Zbeyer/iosColorUtilities.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>colUtil/colUtil.xcodeproj</string>
+	<string>colUtil/colUtil.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>93E4E6F750D86614A06CE08774D68F3E70358A38</key>
